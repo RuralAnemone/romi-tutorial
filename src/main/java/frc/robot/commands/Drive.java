@@ -11,6 +11,7 @@
 // ROBOTBUILDER TYPE: Command.
 
 package frc.robot.commands;
+import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import java.util.function.DoubleSupplier;
 
@@ -58,6 +59,10 @@ public class Drive extends CommandBase {
     // Called every time the scheduler runs while the command is scheduled.
     @Override
     public void execute() {
+        m_driveBase.drive(m_speed.getAsDouble(), m_direction.getAsDouble());
+        
+        // ==> ඞ <==
+
     }
 
     // Called once the command ends or is interrupted.
