@@ -80,7 +80,7 @@ differentialDrive.setMaxOutput(1.0);
     // here. Call these from Commands.
 
     public void drive(double speed, double direction) {
-        
+        differentialDrive.arcadeDrive(speed, direction);
     }
 
 }
