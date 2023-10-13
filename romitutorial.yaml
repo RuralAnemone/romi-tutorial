@@ -72,10 +72,10 @@ Children:
         name: Default command parameters
         validators: null
         value:
-        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: speed, type: double,
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: speed, type: DoubleSupplier,
           value: 'XboxControllerInterface::getLeftY'}
         - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: direction,
-          type: double, value: 'XboxControllerInterface::getLeftY()'}
+          type: DoubleSupplier, value: 'XboxControllerInterface::getLeftX'}
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: Drive}
       Constants: !!robotbuilder.data.properties.ConstantsProperty
@@ -112,8 +112,8 @@ Children:
         name: Parameters
         validators: null
         value:
-        - !!robotbuilder.data.properties.ParameterDescriptor {name: speed, type: double}
-        - !!robotbuilder.data.properties.ParameterDescriptor {name: direction, type: double}
+        - !!robotbuilder.data.properties.ParameterDescriptor {name: speed, type: DoubleSupplier}
+        - !!robotbuilder.data.properties.ParameterDescriptor {name: direction, type: DoubleSupplier}
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
